@@ -18,7 +18,7 @@ else:
 '''
 #3.Check and display whether y is a positive, negative or neutral number.
 
-'''
+
 y = int(input("Choose a number:"))
 if y >0:
     print(f"The number {y} is positive number.")
@@ -26,7 +26,7 @@ elif y<0:
     print(f"The number {y} is negative number.")
 else:
     print(f"The number {y} is neutral number.")
-'''
+
 #4.Check and display if z is between -2 and 13.
 '''
 z = int(input("Choose a number:"))
@@ -39,7 +39,7 @@ else:
 #5.Check and display if the difference between p and t is less than 5.
 #The abs function will be used.
 
-'''
+
 p = int(input("First number"))
 t = int(input("Second number"))
 
@@ -47,20 +47,20 @@ if abs(p-t)<5:
     print(f"The difference between p and t is {abs(p-t)}, so less then 5.")
 else:
     print(f"The difference between p and t is {abs(p-t)}, so  more then 5.")
-'''
+
 
 #6.Check if g is NOT between 5 and 27, including range ends.
 
-'''g = int(input("Number:"))
+g = int(input("Number:"))
 
 if not(g >= 5 and g <= 27):
     print(f"The chosen number does not fit in the desired range ")
 else:
-    print(f"The chosen number is in the desired range ")'''
+    print(f"The chosen number is in the desired range ")
 
 #7.Displays if k and l are equal, if not, displays which is bigger.
 
-'''k = int(input("Number1:"))
+k = int(input("Number1:"))
 l = int(input("Number2:"))
 
 if k == l:
@@ -68,13 +68,13 @@ if k == l:
 elif k > l:
     print(f"Number1 is bigger than Number2.")
 else:
-    print(f"Number2 is bigger than Number2.")'''
+    print(f"Number2 is bigger than Number2.")
 
 #8.Assuming that a, b, c (all of type int) - represent the sides of a triangle, show whether
 #the triangle is isosceles (two sides are equal), equilateral (all sides are equal) or
 #random (no sides are equal).
 
-'''a = int(input("Side1:"))
+a = int(input("Side1:"))
 b = int(input("Side2:"))
 c = int(input("Side3:"))
 
@@ -83,20 +83,20 @@ if a == b ==c:
 elif a == b or b == c or a == c:
     print("Two sides are equal the triangle is isosceles.")
 else:
-    print("All sides are different the triangle is random.")'''
+    print("All sides are different the triangle is random.")
 
 #9.Read a letter from the keyboard then check and display whether it is a vowel or not. Attention!
 #You need to evaluate uppercase and lowercase cases.
 
-'''q = input("Choose a letter:")
+q = input("Choose a letter:")
 
 if q.lower() in ('a','e','i','o','u'):
     print(f"The letter you chose is a vowel.")
 else:
-    print(f"The letter you chose is a consonant.")'''
+    print(f"The letter you chose is a consonant.")
 
 #10.Transform and print school grades from Romanian system to American system.
-'''
+
 ro_grades = int(input("The student's grade is:"))
 us_grades = ""
 
@@ -118,10 +118,10 @@ elif ro_grades >= 4:
 else:
     us_grades = "F"
     print(f"The student's grade is {us_grades}.")
-'''
+
 
 # 11. Check if x has at least 4 digits.Check if x has exactly 6 digits.Check if x is even or odd
-'''
+
 
 x = int(input("number ="))
 if x > 999:
@@ -139,11 +139,11 @@ else:
 if x % 2 == 0:
     print(f"{x} is an even number")
 else:
-    print(f"{x} is an odd number")'''
+    print(f"{x} is an odd number")
 
 # 12. Having three variables x, y, z (all int) displays in the console which is the larger of
 # them.
-'''
+
 x = int(input("first no ="))
 y = int(input("second no ="))
 z = int(input("third no ="))
@@ -156,11 +156,11 @@ elif z > x and z > y:
     print(f"{z} is the bigger number")
 else:
     print("The numbers are equal")
-'''
+
 
 #13. Assuming that x, y, z - represent the angles of a triangle, check and display whether
 #the triangle is valid or not (a triangle is valid if the sum of all angles is 180 degrees)
-'''
+
 x = int(input("first angle ="))
 y = int(input("second angle ="))
 z = int(input("third angle ="))
@@ -169,14 +169,14 @@ if x + y + z == 180:
     print("The triangle is valid")
 else:
     print("The triengle is not valid")
-'''
+
 
 #14.With the string: 'Coral is either the stupidest animal or the smartest rock' read by
 # the keyboard a number x of type int and displays the string without the last x characters.
 #Declare a new string to be the first 5 characters + the last 5.
 #Save to a variable and displaythe starting index of the word rock, displays the whole string up to this word.
 
-'''string = "Coral is either the stupidest animal or the smartest rock"
+string = "Coral is either the stupidest animal or the smartest rock"
 
 print(string[:len(string)-7])
 
@@ -185,20 +185,20 @@ new_string = (string[:5] + string[-5:])
 print(new_string)
 excw = "rock"
 indx = string.index(excw)
-print(string[:indx])'''
+print(string[:indx])
 
 # 15.Read a string from the keyboard and check if the first and last characters are the same. You
 # will use an assert.
 
-'''string = input("type a string:")
-assert string[0].lower() == string[-1] ,"Error, the letters are not the same."'''
+string = input("type a string:")
+assert string[0].lower() == string[-1] ,"Error, the letters are not the same."
 
 #16.Having the string '0123456789' displays only even numbers and then only odd numbers.
 
-'''string = "0123456789"
+string = "0123456789"
 
 print(string[::2])
-print(string[1::2])'''
+print(string[1::2])
 
 #17.We want to create an application for purchasing airline tickets that will receive the right
 # the following information:
@@ -209,28 +209,28 @@ print(string[1::2])'''
 # e. Mother's permission document
 # f. Permission document father
 #
-# age = int(input("Your age is:"))
-# passport = (input("You have a passport? "))
-# with_mother = (input("Accompanied by mother?"))
-# with_father = (input("Accompanied by father?"))
-# perm_mother = (input("Mother Permission Act?"))
-# perm_father = (input("Father Permission Act?"))
-#
-# if (age >= 18 and passport == "yes"):
-#     print("You can board the plane")
-# elif( age < 18 and with_father == "yes" and with_mother =="yes" and passport == "yes"):
-#     print("You can board the plane")
-#
-# elif(age < 18 and with_father == "yes" and perm_mother == "yes" and passport == "yes"):
-#     print("You can board the plane")
-# elif (age< 18 and with_mother=="yes" and perm_father =="yes" and passport == "yes"):
-#     print("You can board the plane")
-# else:
-#     print("You can't bord the plane is you don't meet the requirements"
-#           "- you have a passport and you are above 18"
-#           "- you have passport, you are under 18 but you are with both parents"
-#           "- you have passport, you are under 18, you are with just one of your parents,"
-#           "but you have a permit from the other parent.")
+age = int(input("Your age is:"))
+passport = (input("You have a passport? "))
+with_mother = (input("Accompanied by mother?"))
+with_father = (input("Accompanied by father?"))
+perm_mother = (input("Mother Permission Act?"))
+perm_father = (input("Father Permission Act?"))
+
+if (age >= 18 and passport == "yes"):
+    print("You can board the plane")
+elif( age < 18 and with_father == "yes" and with_mother =="yes" and passport == "yes"):
+    print("You can board the plane")
+
+elif(age < 18 and with_father == "yes" and perm_mother == "yes" and passport == "yes"):
+    print("You can board the plane")
+elif (age< 18 and with_mother=="yes" and perm_father =="yes" and passport == "yes"):
+    print("You can board the plane")
+else:
+    print("You can't bord the plane is you don't meet the requirements"
+          "- you have a passport and you are above 18"
+          "- you have passport, you are under 18 but you are with both parents"
+          "- you have passport, you are under 18, you are with just one of your parents,"
+          "but you have a permit from the other parent.")
 
 #18. Gambling game.
 import random
@@ -245,7 +245,32 @@ else:
     print(f"You lost, the number you picked is bigger then the number given by the dice:{dice_roll} < {my_number}")
 
 
+#19.If a client has over 65 years, then it will be offered to him a discount of 15%.
+# Otherwise if the customer does not have over 65 years, if the person travels with at
+# least one child they will have a discount of 10%
+# For both seniors and non seniors it will be applied an additional discount of 10% if they
+# will travel during winter.
+# Also, for both seniors and non seniors it will be applied a 3% luxury fee if they will travel
+# in the first class (in any season) or 1% handling fee otherwise.
 
 
-
+age = int(input("Please enter your age: "))
+season = input("Please enter the season: ")
+clas = int(input("Please enter the class in which you are travelling: "))
+price = int(input("Please enter the basic ticket price: "))
+disccount = 0
+if age>65:
+	disccount = 0.15
+else:
+	nr_copii = int(input("Please enter the number of children you are travelling with: "))
+	if nr_copii>0:
+		discount = 0.1
+if season == 'winter':
+		disccount += 0.1
+if clas == 1:
+	tax = 0.03
+else:
+	tax = 0.01
+price = price - price*disccount + price * tax
+print(f" The final price is: {price}.")
 

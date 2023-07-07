@@ -252,4 +252,30 @@ def country_time_zones():
 
 country_time_zones()
 
+#20. Appliyng a discount.
+def price_calculation_after_discount (age, season, clas, price ):
+    discount = 0
+    if age > 65:
+        discount = 0.15
+    else:
+        num_children = int(input("Please enter the number of children you are travelling with: "))
+        if num_children > 0:
+            discount = 0.1
+    if season == 'winter':
+        discount += 0.1
+        if clas == 1:
+            tax = 0.03
+        else:
+            tax = 0.01
+    price = price - price * discount + price * tax
+    return price
+
+age = int(input("Please enter your age : "))
+season = input("Please enter the season when you travel: ")
+clas = int(input("Please enter the class in which you are travelling: "))
+price = int(input("Please enter the basic ticket price: "))
+
+
+pret_calculat = price_calculation_after_discount (age, season, clas, price )
+print(f"The price after the discount is:{pret_calculat}")
 

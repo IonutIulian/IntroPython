@@ -2,6 +2,29 @@
 
 # Homework 4 - Repetitive Cycles
 
+"""Repetitive structures = ways in which we can execute code repeatedly
+					until a certain condition is no longer met
+					or until we no longer fall within a certain range
+
+There are four types of repetitive structures:
+while
+do while
+for
+for each
+
+Ways of controlling repetitive structures:
+- break
+- continue
+
+1. While is a repetitive structure in which we execute a series of instructions as long as a condition is true
+Usually the while control element or variable is declared outside the while.
+
+2.For = repetitive structure that is used when we want to go through a list in order to print the items
+or modify them, and respectively when we want to execute a set of instructions of a specific number times (range).
+
+3,
+"""
+
 #1. Use a forum to browse through the whole list and display;
 # 'My favourite car is x'.
 # Do the same with a for each.
@@ -199,3 +222,67 @@ phone_keypad = [
 for i in range(len(phone_keypad)):
     for j in range(len(phone_keypad[i])):
         print(f"The current number is {phone_keypad[i][j]}")
+
+#16.I want to go through a list of items and print each item in the list.
+# I want to replace Dorin with Andreea.
+# I want to replace Laurentiu with Dorin because Dorin changed his mind and kicked George out.
+
+
+list_students = ["ramona","catalin","laurentiu","george","ionut","dorin"]
+i = 0
+while i<len(list_students):
+    print(f"The current student is: {list_students[i]}")
+    i+=1
+
+i = 0
+while i<len(list_students):
+    if list_students[i]=="dorin":
+        list_students[i]="andreea"
+    i+=1
+print(f"The final list after dorin left is: {list_students}")
+
+while i<len(list_students):
+    if list_students[i]=="dorin":
+        list_students[i]="andreea"
+        break
+    i+=1
+print(f"The final list after dorin kicked out george is: {list_students}")
+
+#17.Using bubble sort with swap variable, sort a list of integers.
+
+
+list = [6,5,4,8,9,3,-1,10]
+for i in range(len(list)-1):
+    change = False
+    for j in range(i+1,len(list)):
+        if list[i]>list[j]:
+            swap = list[i]
+            list[i] = list[j]
+            list[j] = swap
+            schimbare = True
+        if change == False:
+            break
+print(f"The list sorted in ascending order is: {list}")
+
+# Descending order:
+
+for i in range(len(list)-1):
+    for j in range(i+1,len(list)):
+        if list[i]<list[j]:
+            swap = list[i]
+            list[i],list[j]=list[j],list[i]
+            list[j] = swap
+print(f"The list sorted in descending order is: {list}")
+
+
+# descending order by ASCII code.
+
+
+list_text = ["anton","maria","trandafir","teodor","noapte","teofil","marti","curs"]
+for i in range(len(list_text)-1):
+    for j in range(i+1,len(list_text)):
+        if list_text[i]<list_text[j]:
+            swap = list_text[i]
+            list_text[i],list_text[j]=list_text[j],list_text[i]
+            list_text[j] = swap
+print(f"The list of texts sorted descending by ASCII code is: {list_text}")

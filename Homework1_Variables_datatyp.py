@@ -74,11 +74,11 @@ middle = text[len(text)//2]
 print(f"The  middle character is {middle}")
 
 #10.Using assert, check if a string is a palindrome.
-'''
+
 str = "rotator"
 rev = ''.join(reversed(str))
 assert str == rev,"Error the string is not palindrome"
-'''
+
 #11.Saves each word in a variable; prints both variables for verification.
 
 nstr = "banana orange"
