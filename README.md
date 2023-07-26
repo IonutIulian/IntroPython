@@ -1,1 +1,1 @@
-My introduction to the Python programming language
+My first steps in python programming language, the homework I did during the course. 
